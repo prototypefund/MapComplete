@@ -17,6 +17,7 @@ import OpeningHoursVisualization from "./OpeningHours/OhVisualization";
 
 import State from "../State";
 import {ImageSearcher} from "../Logic/Actors/ImageSearcher";
+import EmbeddedMap from "./Popup/EmbeddedMap";
 
 export default class SpecialVisualizations {
 
@@ -176,8 +177,16 @@ export default class SpecialVisualizations {
                     }
 
                 }
+            },
+            {
+                funcName: "minimap",
+                docs: "Shows a small minimap with only the selected feature",
+                args:[],
+                example: "{minimap()}",
+                constr: (state, tagSource, args) => {
+                    return new EmbeddedMap()
+                }
             }
-
         ]
     static HelpMessage: UIElement = SpecialVisualizations.GenHelpMessage();
 

@@ -61,6 +61,9 @@
   "tagRenderings": [
     "images",
     {
+      "render": "{minimap()}"
+    },
+    {
       "render": {
         "en": "The name of this bookcase is {name}",
         "nl": "De naam van dit boekenruilkastje is {name}",
