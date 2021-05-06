@@ -53,7 +53,7 @@ export default class MoreScreen extends UIElement {
             path = "."
         }
         
-        const params = `z=${currentLocation.zoom ?? 1}&lat=${currentLocation.lat ?? 0}&lon=${currentLocation.lon ?? 0}`
+        const params = `z=${layout.startZoom}&lat=${layout.startLat}&lon=${layout.startLon}`
         let linkText =
             `${path}/${layout.id.toLowerCase()}.html?${params}`
 
