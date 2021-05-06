@@ -15,9 +15,9 @@
   "maintainer": "Erwin Olario",
   "icon": "./assets/themes/hailhydrant/logo.svg",
   "version": "0",
-  "startLat": 13.67801,
-  "startLon": 121.6625,
-  "startZoom": 6,
+  "startLat": 52.57384,
+  "startLon": 13.56262,
+  "startZoom": 9,
   "widenFactor": 0.05,
   "socialImage": "",
   "layers": [
