@@ -13,4 +13,4 @@ There, go to `~/mapcomplete`:
     cd mapcomplete
 
 Then follow the instructions for building and running the project from the
-main README.
+[development guide](../Docs/Development_deployment.md).
