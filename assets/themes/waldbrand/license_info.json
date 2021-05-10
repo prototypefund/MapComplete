@@ -1,0 +1,92 @@
+[
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "logo.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "flachbrunnen.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "hydrant.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "hydrant-unklar.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "saugstelle.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "speicher.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "tiefbrunnen.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "tiefbrunnen-t.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  },
+  {
+    "authors": [
+      "Sebastian Kürten"
+    ],
+    "path": "tiefbrunnen-e.svg",
+    "license": "CC-BY-SA 4.0",
+    "sources": [
+      "https://github.com/waldbrand"
+    ]
+  }
+]

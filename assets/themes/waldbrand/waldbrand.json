@@ -1,0 +1,231 @@
+{
+  "id": "waldbrand",
+  "title": {
+    "de": "Waldbrandschutzkarte – Wasserentnahmestellen"
+  },
+  "shortDescription": {
+    "en": "Map to show hydrants, extinguishers, fire stations, and ambulance stations."
+  },
+  "description": {
+    "en": "On this map you can find and update hydrants, fire stations, ambulance stations, and extinguishers in your favorite neighborhoods.  \n\nYou can track your precise location (mobile only) and select layers that are relevant for you in the bottom left corner. You can also use this tool to add or edit pins (points of interest) to the map and provide additional details  by answering  available questions.  \n\nAll changes you make will automatically be saved in the global database of OpenStreetMap and can be freely re-used by others."
+  },
+  "language": [
+    "en"
+  ],
+  "maintainer": "Erwin Olario",
+  "icon": "./assets/themes/waldbrand/logo.svg",
+  "version": "0",
+  "startLat": 52.57384,
+  "startLon": 13.56262,
+  "startZoom": 9,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "hydrants",
+      "name": {
+        "en": "Map of hydrants"
+      },
+      "minzoom": 14,
+      "source": {
+        "osmTags": {
+          "and": [
+            "emergency=fire_hydrant"
+          ]
+        }
+      },
+      "title": {
+        "render": {
+          "en": "Hydrant"
+        }
+      },
+      "description": {
+        "en": "Map layer to show fire hydrants."
+      },
+      "tagRenderings": [
+        {
+          "question": {
+            "en": "What color is the hydrant?"
+          },
+          "render": {
+            "en": "The hydrant color is {colour}"
+          },
+          "freeform": {
+            "key": "colour"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "colour="
+                ]
+              },
+              "then": {
+                "en": "The hydrant color is unknown."
+              },
+              "hideInAnswer": true
+            },
+            {
+              "if": {
+                "and": [
+                  "colour=yellow"
+                ]
+              },
+              "then": {
+                "en": "The hydrant color is yellow."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "colour=red"
+                ]
+              },
+              "then": {
+                "en": "The hydrant color is red."
+              }
+            }
+          ]
+        },
+        {
+          "question": {
+            "en": "What type of hydrant is it?"
+          },
+          "freeform": {
+            "key": "fire_hydrant:type"
+          },
+          "render": {
+            "en": " Hydrant type: {fire_hydrant:type}"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type="
+                ]
+              },
+              "then": {
+                "en": "The hydrant type is unknown."
+              },
+              "hideInAnswer": true
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=pillar"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Überflurhydrant."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=pipe"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Druckloser Anschluss."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=wall"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Wandhydrant."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=underground"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Unterflurhydrant."
+              }
+            }
+          ]
+        },
+        {
+          "question": {
+            "en": "Update the lifecycle status of the hydrant."
+          },
+          "render": {
+            "en": "Lifecycle status"
+          },
+          "freeform": {
+            "key": "disused:emergency"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "emergency=fire_hydrant"
+                ]
+              },
+              "then": {
+                "en": "The hydrant is (fully or partially) working."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "disused:emergency=fire_hydrant",
+                  "emergency="
+                ]
+              },
+              "then": {
+                "en": "The hydrant is unavailable."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "removed:emergency=fire_hydrant",
+                  "emergency="
+                ]
+              },
+              "then": {
+                "en": "The hydrant has been removed."
+              }
+            }
+          ]
+        },
+        "images"
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "./assets/themes/waldbrand/hydrant.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "20,20,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "emergency=fire_hydrant"
+          ],
+          "title": {
+            "en": "Fire hydrant"
+          },
+          "description": {
+            "en": "A hydrant is a connection point where firefighters can tap water. It might be located underground."
+          }
+        }
+      ],
+      "wayHandling": 2
+    }
+  ],
+  "defaultBackgroundId": "HDM_HOT"
+}
