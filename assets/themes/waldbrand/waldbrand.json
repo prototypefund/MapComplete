@@ -40,7 +40,7 @@
         }
       },
       "description": {
-        "en": "Map layer to show fire hydrants."
+        "de": "Kartenebene mit Hydranten."
       },
       "tagRenderings": [
         {
@@ -225,6 +225,37 @@
         }
       ],
       "wayHandling": 2
+    },
+    {
+      "id": "speicher",
+      "name": {
+        "de": "Wasserspeicher"
+      },
+      "minzoom": 12,
+      "source": {
+        "osmTags": {
+          "or": [
+            "emergency=water_tank",
+            "emergency=fire_water_pond"
+          ]
+        }
+      },
+      "description": {
+        "de": "Kartenebene mit Wasserspeichern."
+      },
+      "icon": {
+        "render": "./assets/themes/waldbrand/speicher.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "20,20,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "wayHandling": 1
     }
   ],
   "defaultBackgroundId": "HDM_HOT"
