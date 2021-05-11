@@ -24,7 +24,7 @@
     {
       "id": "hydrants",
       "name": {
-        "en": "Map of hydrants"
+        "de": "Hydranten"
       },
       "minzoom": 12,
       "source": {
