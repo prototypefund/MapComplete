@@ -256,6 +256,36 @@
         "render": "#00f"
       },
       "wayHandling": 1
+    },
+    {
+      "id": "saugstellen",
+      "name": {
+        "de": "Saugstellen"
+      },
+      "minzoom": 12,
+      "source": {
+        "osmTags": {
+          "or": [
+            "emergency=suction_point"
+          ]
+        }
+      },
+      "description": {
+        "de": "Kartenebene mit Saugstellen."
+      },
+      "icon": {
+        "render": "./assets/themes/waldbrand/saugstelle.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "20,20,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "wayHandling": 1
     }
   ],
   "defaultBackgroundId": "HDM_HOT"
