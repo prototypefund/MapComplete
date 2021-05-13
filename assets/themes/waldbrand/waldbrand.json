@@ -171,51 +171,6 @@
             }
           ]
         },
-        {
-          "question": {
-            "en": "Update the lifecycle status of the hydrant."
-          },
-          "render": {
-            "en": "Lifecycle status"
-          },
-          "freeform": {
-            "key": "disused:emergency"
-          },
-          "mappings": [
-            {
-              "if": {
-                "and": [
-                  "emergency=fire_hydrant"
-                ]
-              },
-              "then": {
-                "en": "The hydrant is (fully or partially) working."
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "disused:emergency=fire_hydrant",
-                  "emergency="
-                ]
-              },
-              "then": {
-                "en": "The hydrant is unavailable."
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "removed:emergency=fire_hydrant",
-                  "emergency="
-                ]
-              },
-              "then": {
-                "en": "The hydrant has been removed."
-              }
-            }
-          ]
-        },
         "images"
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
