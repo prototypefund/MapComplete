@@ -4,13 +4,13 @@
     "de": "Wasserentnahmestellen"
   },
   "shortDescription": {
-    "en": "Map to show hydrants, extinguishers, fire stations, and ambulance stations."
+    "de": "Karte mit Wasserentnahmestellen, Wasserspeichern und Saugstellen."
   },
   "description": {
-    "en": "On this map you can find and update hydrants, fire stations, ambulance stations, and extinguishers in your favorite neighborhoods.  \n\nYou can track your precise location (mobile only) and select layers that are relevant for you in the bottom left corner. You can also use this tool to add or edit pins (points of interest) to the map and provide additional details  by answering  available questions.  \n\nAll changes you make will automatically be saved in the global database of OpenStreetMap and can be freely re-used by others."
+    "de": "Auf dieser Karte kannst du Wasserentnahmestellen, Wasserspeicher und Saugstellen finden, aktualisieren und neue eintragen. Du kannst auf dem Handy deinen Standort anzeigen, falls du einen Hydranten eintragen möchtest, wo du dich gerade befindest. Klicke eine Markierung auf der Karte an, um Details zu sehen und Fragen zum jeweiligen Hydranten zu beantworten, mit denen du die Datenlage verbessern und auch ein Bild hochladen kannst. Alle Änderungen, die du machst werden automatisch in der globalen Datenbank des OpenStreetMap-Projekts abgespeichert und können frei von allen verwendet werden."
   },
   "language": [
-    "en"
+    "de"
   ],
   "maintainer": "Sebastian Kürten",
   "icon": "./assets/themes/waldbrand/logo.svg",
@@ -36,7 +36,7 @@
       },
       "title": {
         "render": {
-          "en": "Hydrant"
+          "de": "Hydrant"
         }
       },
       "description": {
@@ -45,57 +45,77 @@
       "tagRenderings": [
         {
           "question": {
-            "en": "What color is the hydrant?"
+            "de": "Welchen Innendurchmesser hat die Zuleitung?"
           },
           "render": {
-            "en": "The hydrant color is {colour}"
+            "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm"
           },
           "freeform": {
-            "key": "colour"
+            "key": "fire_hydrant:diameter"
           },
           "mappings": [
             {
               "if": {
                 "and": [
-                  "colour="
+                  "fire_hydrant:diameter="
                 ]
               },
               "then": {
-                "en": "The hydrant color is unknown."
+                "de": "Der Innendurchmesser ist unbekannt."
               },
               "hideInAnswer": true
             },
             {
               "if": {
                 "and": [
-                  "colour=yellow"
+                  "fire_hydrant:diameter=80"
                 ]
               },
               "then": {
-                "en": "The hydrant color is yellow."
+                "de": "Der Innendurchmesser beträgt 80mm."
               }
             },
             {
               "if": {
                 "and": [
-                  "colour=red"
+                  "fire_hydrant:diameter=100"
                 ]
               },
               "then": {
-                "en": "The hydrant color is red."
+                "de": "Der Innendurchmesser beträgt 100mm."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:diameter=150"
+                ]
+              },
+              "then": {
+                "de": "Der Innendurchmesser beträgt 150."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:diameter=200"
+                ]
+              },
+              "then": {
+                "de": "Der Innendurchmesser beträgt 200."
               }
             }
           ]
         },
         {
           "question": {
-            "en": "What type of hydrant is it?"
+            "de": "Welche Art Hydrant ist es?"
           },
           "freeform": {
             "key": "fire_hydrant:type"
           },
           "render": {
-            "en": " Hydrant type: {fire_hydrant:type}"
+            "de": " Hydrant type: {fire_hydrant:type}"
           },
           "mappings": [
             {
@@ -105,7 +125,7 @@
                 ]
               },
               "then": {
-                "en": "The hydrant type is unknown."
+                "de": "Die Art des Hydranten ist unbekannt."
               },
               "hideInAnswer": true
             },
