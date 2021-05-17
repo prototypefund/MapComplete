@@ -43,7 +43,7 @@
         "de": "Kartenebene mit Hydranten."
       },
       "calculatedTags": [
-        "_flowrate='12'"
+        "_flowrate=(feat.properties['fire_hydrant:diameter']) ? 'ca. ' + 12 * Number(feat.properties['fire_hydrant:diameter']) + 'l/m' : '-'"
       ],
       "tagRenderings": [
         {
@@ -51,7 +51,7 @@
             "de": "Welchen Innendurchmesser hat die Zuleitung?"
           },
           "render": {
-            "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm"
+            "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm. (Durchflussleistung: {_flowrate}"
           },
           "freeform": {
             "key": "fire_hydrant:diameter"
@@ -75,7 +75,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 80mm. (Durchflussleistung: {_flowrate}l/m)"
+                "de": "Der Innendurchmesser beträgt 80mm. (Durchflussleistung: {_flowrate})"
               }
             },
             {
@@ -85,7 +85,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 100mm."
+                "de": "Der Innendurchmesser beträgt 100mm. (Durchflussleistung: {_flowrate})"
               }
             },
             {
@@ -95,7 +95,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 150."
+                "de": "Der Innendurchmesser beträgt 150mm. (Durchflussleistung: {_flowrate}"
               }
             },
             {
@@ -105,7 +105,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 200."
+                "de": "Der Innendurchmesser beträgt 200mm. (Durchflussleistung: {_flowrate}"
               }
             }
           ]
