@@ -43,7 +43,7 @@
         "de": "Kartenebene mit Hydranten."
       },
       "calculatedTags": [
-        "_flowrate=(feat.properties['fire_hydrant:diameter']) ? 'ca. ' + 12 * Number(feat.properties['fire_hydrant:diameter']) + 'l/m' : '-'"
+        "_flowrate=(feat.properties['fire_hydrant:diameter']) ? 'ca. ' + 12 * Number(feat.properties['fire_hydrant:diameter']) + ' bis ' + 15 * Number(feat.properties['fire_hydrant:diameter']) + ' l/m' : '-'"
       ],
       "tagRenderings": [
         {
@@ -51,7 +51,7 @@
             "de": "Welchen Innendurchmesser hat die Zuleitung?"
           },
           "render": {
-            "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm. (Durchflussleistung: {_flowrate}"
+            "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm."
           },
           "freeform": {
             "key": "fire_hydrant:diameter"
@@ -75,7 +75,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 80mm. (Durchflussleistung: {_flowrate})"
+                "de": "Der Innendurchmesser beträgt 80mm."
               }
             },
             {
@@ -85,7 +85,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 100mm. (Durchflussleistung: {_flowrate})"
+                "de": "Der Innendurchmesser beträgt 100mm."
               }
             },
             {
@@ -95,7 +95,7 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 150mm. (Durchflussleistung: {_flowrate}"
+                "de": "Der Innendurchmesser beträgt 150mm."
               }
             },
             {
@@ -105,8 +105,29 @@
                 ]
               },
               "then": {
-                "de": "Der Innendurchmesser beträgt 200mm. (Durchflussleistung: {_flowrate}"
+                "de": "Der Innendurchmesser beträgt 200mm."
               }
+            }
+          ]
+        },
+        {
+          "render": {
+            "de": "Die Durchflussleistung beträgt {_flowrate}"
+          },
+          "freeform": {
+            "key": "fire_hydrant:diameter"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:diameter="
+                ]
+              },
+              "then": {
+                "de": "Die Durchflussleistung ist unbekannt."
+              },
+              "hideInAnswer": true
             }
           ]
         },
