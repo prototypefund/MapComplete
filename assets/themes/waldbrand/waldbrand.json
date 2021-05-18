@@ -4,10 +4,10 @@
     "de": "Wasserentnahmestellen"
   },
   "shortDescription": {
-    "de": "Karte mit Wasserentnahmestellen, Wasserspeichern und Saugstellen."
+    "de": "Karte mit Hydranten, Wasserspeichern und Saugstellen."
   },
   "description": {
-    "de": "Auf dieser Karte kannst du Wasserentnahmestellen, Wasserspeicher und Saugstellen finden, aktualisieren und neue eintragen. Du kannst auf dem Handy deinen Standort anzeigen, falls du einen Hydranten eintragen möchtest, wo du dich gerade befindest. Klicke eine Markierung auf der Karte an, um Details zu sehen und Fragen zum jeweiligen Hydranten zu beantworten, mit denen du die Datenlage verbessern und auch ein Bild hochladen kannst. Alle Änderungen, die du machst werden automatisch in der globalen Datenbank des OpenStreetMap-Projekts abgespeichert und können frei von allen verwendet werden."
+    "de": "Auf dieser Karte kannst du Hydranten, Wasserspeicher und Saugstellen finden, aktualisieren und neue eintragen. Du kannst auf dem Handy deinen Standort anzeigen, falls du eine Wasserentnahmestelle eintragen möchtest, wo du dich gerade befindest. Klicke eine Markierung auf der Karte an, um Details zu sehen und Fragen zur jeweiligen Wasserentnahmestelle zu beantworten, mit denen du die Datenlage verbessern und auch ein Bild hochladen kannst. Alle Änderungen, die du machst werden automatisch in der globalen Datenbank des OpenStreetMap-Projekts abgespeichert und können frei von allen verwendet werden."
   },
   "language": [
     "de"
