@@ -239,6 +239,11 @@
           ]
         }
       },
+      "title": {
+        "render": {
+          "de": "Wasserspeicher"
+        }
+      },
       "description": {
         "de": "Kartenebene mit Wasserspeichern."
       },
@@ -254,7 +259,65 @@
       "color": {
         "render": "#00f"
       },
-      "wayHandling": 1
+      "wayHandling": 1,
+      "tagRenderings": [
+        {
+          "question": {
+            "de": "Welches Volumen hat der Wasserspeicher?"
+          },
+          "render": {
+            "de": "Das Volumen beträgt {water_tank:volume}."
+          },
+          "freeform": {
+            "key": "water_tank:volume"
+          }
+        },
+        {
+          "question": {
+            "de": "Welche Art Wasserspeicher ist es?"
+          },
+          "freeform": {
+            "key": "emergency"
+          },
+          "render": {
+            "de": " Wasserpeicher: {emergency}"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "emergency="
+                ]
+              },
+              "then": {
+                "de": "Die Art des Wasserspeichers ist unbekannt."
+              },
+              "hideInAnswer": true
+            },
+            {
+              "if": {
+                "and": [
+                  "emergency=water_tank"
+                ]
+              },
+              "then": {
+                "de": "Wasserbecken."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "emergency=fire_water_pond"
+                ]
+              },
+              "then": {
+                "de": "Feuerlöschteich."
+              }
+            }
+          ]
+        },
+        "images"
+      ]
     },
     {
       "id": "saugstellen",
