@@ -216,10 +216,10 @@
             "emergency=fire_hydrant"
           ],
           "title": {
-            "en": "Fire hydrant"
+            "de": "Hydrant"
           },
           "description": {
-            "en": "A hydrant is a connection point where firefighters can tap water. It might be located underground."
+            "de": "Ein Hydrant ist ein Anschluss, an dem die Feuerwehr Wasser aus dem Trinkwassernetz entnehmen kann."
           }
         }
       ],
@@ -260,6 +260,30 @@
         "render": "#00f"
       },
       "wayHandling": 1,
+      "presets": [
+        {
+          "tags": [
+            "emergency=water_tank"
+          ],
+          "title": {
+            "de": "Wasserbecken"
+          },
+          "description": {
+            "de": "Ein Wasserbecken ist ein Becken, das zur Entnahme von Wasser für die Feuerwehr angelegt ist."
+          }
+        },
+        {
+          "tags": [
+            "emergency=fire_water_pond"
+          ],
+          "title": {
+            "de": "Feuerlöschteich"
+          },
+          "description": {
+            "de": "Ein Feuerlöschteich ist ein Teich, der zur Entnahme von Wasser für die Feuerwehr angelegt ist."
+          }
+        }
+      ],
       "tagRenderings": [
         {
           "question": {
@@ -347,7 +371,20 @@
       "color": {
         "render": "#00f"
       },
-      "wayHandling": 1
+      "wayHandling": 1,
+      "presets": [
+        {
+          "tags": [
+            "emergency=suction_point"
+          ],
+          "title": {
+            "de": "Saugstelle"
+          },
+          "description": {
+            "de": "Eine Saugstelle ist ein Platz, an dem ein Einsatzfahrzeug geparkt werden kann um Wasser aus einem Gewässer zu entnehmen."
+          }
+        }
+      ]
     }
   ]
 }
