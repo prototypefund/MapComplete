@@ -59,7 +59,8 @@
             "de": "Der Innendurchmesser beträgt {fire_hydrant:diameter}mm."
           },
           "freeform": {
-            "key": "fire_hydrant:diameter"
+            "key": "fire_hydrant:diameter",
+            "type": "pnat"
           },
           "mappings": [
             {
@@ -303,7 +304,8 @@
             "de": "Das Volumen beträgt {water_tank:volume}."
           },
           "freeform": {
-            "key": "water_tank:volume"
+            "key": "water_tank:volume",
+            "type": "pnat"
           },
           "mappings": [
             {
