@@ -31,7 +31,7 @@ export default class ValidatedTextField {
     public static tpList: TextFieldDef[] = [
         ValidatedTextField.tp(
             "string",
-            "A basic string"),
+            "Einen Wert eingeben"),
         ValidatedTextField.tp(
             "text",
             "A string, but allows input of longer strings more comfortably (a text area)",
@@ -76,7 +76,7 @@ export default class ValidatedTextField {
             "numeric"),
         ValidatedTextField.tp(
             "nat",
-            "A positive number or zero",
+            "Eine Zahl eingeben",
             (str) => {
                 str = "" + str;
                 return str !== undefined && str.indexOf(".") < 0 && !isNaN(Number(str)) && Number(str) >= 0
@@ -86,7 +86,7 @@ export default class ValidatedTextField {
             "numeric"),
         ValidatedTextField.tp(
             "pnat",
-            "A strict positive number",
+            "Eine positive Zahl eingeben",
             (str) => {
                 str = "" + str;
                 return str !== undefined && str.indexOf(".") < 0 && !isNaN(Number(str)) && Number(str) > 0
@@ -221,8 +221,8 @@ export default class ValidatedTextField {
         location?: [number /*lat*/, number /*lon*/]
     }): InputElement<string> {
         options = options ?? {};
-        options.placeholder = options.placeholder ?? type;
         const tp: TextFieldDef = ValidatedTextField.AllTypes[type]
+        options.placeholder = options.placeholder ?? (tp.explanation ?? type);
         const isValidTp = tp.isValid;
         let isValid;
         options.textArea = options.textArea ?? type === "text";

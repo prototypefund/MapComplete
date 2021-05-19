@@ -287,6 +287,7 @@ export default class TagRenderingQuestion extends UIElement {
             isValid: (str) => (str.length <= 255),
             country: () => this._tags.data._country,
             location: [this._tags.data._lat, this._tags.data._lon]
+            //placeholder: "z.B. 100"
         });
 
         textField.GetValue().setData(this._tags.data[this._configuration.freeform.key]);
