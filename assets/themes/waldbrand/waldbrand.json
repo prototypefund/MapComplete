@@ -176,7 +176,7 @@
                 ]
               },
               "then": {
-                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Druckloser Anschluss."
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/tiefbrunnen.svg\" /> Druckloser Anschluss."
               }
             },
             {
@@ -205,7 +205,17 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "./assets/themes/waldbrand/hydrant.svg"
+        "render": "./assets/themes/waldbrand/hydrant.svg",
+        "mappings": [
+          {
+            "if": "fire_hydrant:type=",
+            "then": "./assets/themes/waldbrand/hydrant-unklar.svg"
+          },
+          {
+            "if": "fire_hydrant:type=pipe",
+            "then": "./assets/themes/waldbrand/tiefbrunnen.svg"
+          }
+        ]
       },
       "width": {
         "render": "8"
