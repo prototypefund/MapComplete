@@ -304,7 +304,20 @@
           },
           "freeform": {
             "key": "water_tank:volume"
-          }
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "water_tank:volume="
+                ]
+              },
+              "then": {
+                "de": "Das Volumen des Wasserspeichers ist unbekannt."
+              },
+              "hideInAnswer": true
+            }
+          ]
         },
         {
           "question": {
