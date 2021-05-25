@@ -17,6 +17,14 @@ interface Params {
  */
 export default class MetaTagging {
 
+    public static flowrate(feat: any): string {
+        let diameter = Number(feat.properties['fire_hydrant:diameter']);
+        let type = feat.properties['fire_hydrant:type'];
+        if (type === 'pillar') {
+            return 'ca. ' + 15 * diameter + 'l/m.';
+        }
+        return 'ca. ' + 10 * diameter + 'l/m.';
+    }
 
     /**
      * An actor which adds metatags on every feature in the given object
@@ -89,14 +97,14 @@ export default class MetaTagging {
             if (code === undefined) {
                 continue;
             }
-            const func = new Function("feat", "return " + code + ";");
+            const func = new Function("mt", "feat", "return " + code + ";");
 
             try {
 
 
                 const f = (featuresPerLayer, feature: any) => {
                     try {
-                        let result = func(feature);
+                        let result = func(this, feature);
                         if(result === undefined || result === ""){
                             return;
                         }

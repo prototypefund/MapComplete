@@ -48,7 +48,7 @@
         "de": "Kartenebene mit Hydranten."
       },
       "calculatedTags": [
-        "_flowrate=(feat.properties['fire_hydrant:diameter']) ? 'ca. ' + 12 * Number(feat.properties['fire_hydrant:diameter']) + ' bis ' + 15 * Number(feat.properties['fire_hydrant:diameter']) + ' l/m' : '-'"
+        "_flowrate=mt.flowrate(feat)"
       ],
       "tagRenderings": [
         {
