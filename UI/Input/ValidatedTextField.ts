@@ -95,6 +95,9 @@ export default class ValidatedTextField {
             undefined,
             "numeric"),
         ValidatedTextField.tp(
+            "volume",
+            "Einen Wert eingeben (mit Einheit m³)"),
+        ValidatedTextField.tp(
             "direction",
             "A geographical direction, in degrees. 0° is north, 90° is east, ... Will return a value between 0 (incl) and 360 (excl)",
             (str) => {

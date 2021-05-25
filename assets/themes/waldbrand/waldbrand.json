@@ -315,7 +315,7 @@
           },
           "freeform": {
             "key": "water_tank:volume",
-            "type": "pnat"
+            "type": "volume"
           },
           "mappings": [
             {
