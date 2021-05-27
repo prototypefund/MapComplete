@@ -21,9 +21,11 @@ export default class MetaTagging {
         let diameter = Number(feat.properties['fire_hydrant:diameter']);
         let type = feat.properties['fire_hydrant:type'];
         if (type === 'pillar') {
-            return 'ca. ' + 15 * diameter + 'l/m.';
+            let rate = 15 * diameter;
+        } else {
+            let rate = 10 * diameter;
         }
-        return 'ca. ' + 10 * diameter + 'l/m.';
+        return 'ca. ' + rate + 'l/min.';
     }
 
     /**
