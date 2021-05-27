@@ -194,6 +194,10 @@
       "gl": "Inicia a sesión no OpenStreetMap",
       "de": "Anmeldung mit OpenStreetMap"
     },
+    "backToWaldbrand": {
+      "en": "Waldbrand Website",
+      "de": "Waldbrand-Website"
+    },
     "welcomeBack": {
       "en": "You are logged in, welcome back!",
       "ca": "Has entrat, benvingut.",

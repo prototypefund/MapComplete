@@ -8,6 +8,7 @@ import {QueryParameters} from "./Logic/Web/QueryParameters";
 import StrayClickHandler from "./Logic/Actors/StrayClickHandler";
 import SimpleAddUI from "./UI/BigComponents/SimpleAddUI";
 import CenterMessageBox from "./UI/CenterMessageBox";
+import BackLink from "./UI/BigComponents/BackLink";
 import UserBadge from "./UI/BigComponents/UserBadge";
 import SearchAndGo from "./UI/BigComponents/SearchAndGo";
 import GeoLocationHandler from "./Logic/Actors/GeoLocationHandler";
@@ -131,6 +132,8 @@ export class InitUiElements {
         }
 
         InitUiElements.InitBaseMap();
+
+        new BackLink().AttachTo('backlink');
 
         InitUiElements.OnlyIf(State.state.featureSwitchUserbadge, () => {
             new UserBadge().AttachTo('userbadge');

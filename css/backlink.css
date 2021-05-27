@@ -1,0 +1,42 @@
+#backlink {
+    display: inline-block;
+    background-color: var(--subtle-detail-color);
+    color: var(--subtle-detail-color-contrast);
+    margin: 0;
+    margin-bottom: 0.5em;
+    width: 100%;
+    min-width: 20em;
+    pointer-events: all;
+    border-radius: 999em;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#backlink a {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
+#waldbrand-pic {
+    float: left;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.25em;
+    margin: 0;
+    transition: opacity 500ms linear;
+}
+
+.backlink-link {
+    font-weight: bold;
+    font-size: large;
+    background-color: var(--subtle-detail-color) !important;
+    color: var(--subtle-detail-color-contrast);
+    height:3em;
+    line-height:4em;
+
+    text-align: center;
+    margin: 0;
+
+    min-width: 20em;
+    pointer-events: all;
+}
