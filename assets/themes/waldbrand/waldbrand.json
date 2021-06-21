@@ -199,7 +199,16 @@
             }
           ]
         },
-        "images"
+        "images",
+        {
+          "question": "Möchtest du einen Kommentar zu diesem Objekt hinterlassen?",
+          "render": {
+            "de": "Notiz: <i>{note}</i>"
+          },
+          "freeform": {
+            "key": "note"
+          }
+        }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
@@ -260,7 +269,16 @@
         "render": "./assets/themes/waldbrand/tiefbrunnen.svg"
       },
       "tagRenderings": [
-        "images"
+        "images",
+        {
+          "question": "Möchtest du einen Kommentar zu diesem Objekt hinterlassen?",
+          "render": {
+            "de": "Notiz: <i>{note}</i>"
+          },
+          "freeform": {
+            "key": "note"
+          }
+        }
       ],
       "width": {
         "render": "8"
@@ -421,7 +439,16 @@
             }
           ]
         },
-        "images"
+        "images",
+        {
+          "question": "Möchtest du einen Kommentar zu diesem Objekt hinterlassen?",
+          "render": {
+            "de": "Notiz: <i>{note}</i>"
+          },
+          "freeform": {
+            "key": "note"
+          }
+        }
       ]
     },
     {
@@ -477,7 +504,16 @@
         }
       ],
       "tagRenderings": [
-        "images"
+        "images",
+        {
+          "question": "Möchtest du einen Kommentar zu diesem Objekt hinterlassen?",
+          "render": {
+            "de": "Notiz: <i>{note}</i>"
+          },
+          "freeform": {
+            "key": "note"
+          }
+        }
       ]
     }
   ]
