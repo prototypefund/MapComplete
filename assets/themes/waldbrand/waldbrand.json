@@ -184,7 +184,18 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "./assets/themes/waldbrand/hydrant.svg"
+        "render": "./assets/themes/waldbrand/hydrant.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "fire_hydrant:type=",
+                "id!=node/-1"
+              ]
+            },
+            "then": "./assets/themes/waldbrand/hydrant-unklar.svg"
+          }
+        ]
       },
       "width": {
         "render": "8"
