@@ -61,6 +61,43 @@
       "tagRenderings": [
         {
           "question": {
+            "de": "Welche Art Hydrant ist es?"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=pillar"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Überflurhydrant."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=wall"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Wandhydrant."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fire_hydrant:type=underground"
+                ]
+              },
+              "then": {
+                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Unterflurhydrant."
+              }
+            }
+          ]
+        },
+        {
+          "question": {
             "de": "Welchen Innendurchmesser hat die Zuleitung?"
           },
           "render": {
@@ -131,43 +168,6 @@
                 "de": "Die Durchflussleistung ist unbekannt."
               },
               "hideInAnswer": true
-            }
-          ]
-        },
-        {
-          "question": {
-            "de": "Welche Art Hydrant ist es?"
-          },
-          "mappings": [
-            {
-              "if": {
-                "and": [
-                  "fire_hydrant:type=pillar"
-                ]
-              },
-              "then": {
-                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Überflurhydrant."
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "fire_hydrant:type=wall"
-                ]
-              },
-              "then": {
-                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Wandhydrant."
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "fire_hydrant:type=underground"
-                ]
-              },
-              "then": {
-                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/hydrant.svg\" /> Unterflurhydrant."
-              }
             }
           ]
         },
