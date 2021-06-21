@@ -74,17 +74,6 @@
             {
               "if": {
                 "and": [
-                  "fire_hydrant:diameter="
-                ]
-              },
-              "then": {
-                "de": "Der Innendurchmesser ist unbekannt."
-              },
-              "hideInAnswer": true
-            },
-            {
-              "if": {
-                "and": [
                   "fire_hydrant:diameter=80"
                 ]
               },
@@ -149,24 +138,7 @@
           "question": {
             "de": "Welche Art Hydrant ist es?"
           },
-          "freeform": {
-            "key": "fire_hydrant:type"
-          },
-          "render": {
-            "de": " Hydrant type: {fire_hydrant:type}"
-          },
           "mappings": [
-            {
-              "if": {
-                "and": [
-                  "fire_hydrant:type="
-                ]
-              },
-              "then": {
-                "de": "Die Art des Hydranten ist unbekannt."
-              },
-              "hideInAnswer": true
-            },
             {
               "if": {
                 "and": [
