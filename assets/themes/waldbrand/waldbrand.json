@@ -36,7 +36,14 @@
         "osmTags": {
           "and": [
             "emergency=fire_hydrant",
-            "not:fire_hydrant:type=pipe"
+            {
+              "or": [
+                "fire_hydrant:type=",
+                "fire_hydrant:type=underground",
+                "fire_hydrant:type=wall",
+                "fire_hydrant:type=pillar"
+              ]
+            }
           ]
         }
       },
