@@ -35,7 +35,8 @@
       "source": {
         "osmTags": {
           "and": [
-            "emergency=fire_hydrant"
+            "emergency=fire_hydrant",
+            "not:fire_hydrant:type=pipe"
           ]
         }
       },
@@ -172,16 +173,6 @@
             {
               "if": {
                 "and": [
-                  "fire_hydrant:type=pipe"
-                ]
-              },
-              "then": {
-                "de": "<img style=\"width:15px\" src=\"./assets/themes/waldbrand/tiefbrunnen.svg\" /> Druckloser Anschluss."
-              }
-            },
-            {
-              "if": {
-                "and": [
                   "fire_hydrant:type=wall"
                 ]
               },
@@ -205,17 +196,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "./assets/themes/waldbrand/hydrant.svg",
-        "mappings": [
-          {
-            "if": "fire_hydrant:type=",
-            "then": "./assets/themes/waldbrand/hydrant-unklar.svg"
-          },
-          {
-            "if": "fire_hydrant:type=pipe",
-            "then": "./assets/themes/waldbrand/tiefbrunnen.svg"
-          }
-        ]
+        "render": "./assets/themes/waldbrand/hydrant.svg"
       },
       "width": {
         "render": "8"
@@ -236,6 +217,64 @@
           },
           "description": {
             "de": "Ein Hydrant ist ein Anschluss, an dem die Feuerwehr Wasser aus dem Trinkwassernetz entnehmen kann."
+          }
+        }
+      ],
+      "wayHandling": 2
+    },
+    {
+      "_comment0": "###############################################",
+      "_comment1": "### layer #####################################",
+      "_comment2": "###############################################",
+      "_comment3": "### fire water wells (pipe) ###################",
+      "_comment4": "###############################################",
+      "id": "brunnen",
+      "name": {
+        "de": "Löschwasserbrunnen"
+      },
+      "minzoom": 12,
+      "source": {
+        "osmTags": {
+          "and": [
+            "emergency=fire_hydrant",
+            "fire_hydrant:type=pipe"
+          ]
+        }
+      },
+      "title": {
+        "render": {
+          "de": "Löschwasserbrunnen"
+        }
+      },
+      "description": {
+        "de": "Kartenebene mit Löschwasserbrunnen."
+      },
+      "icon": {
+        "render": "./assets/themes/waldbrand/tiefbrunnen.svg"
+      },
+      "tagRenderings": [
+        "images"
+      ],
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "35,30,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "emergency=fire_hydrant",
+            "fire_hydrant:type=pipe"
+          ],
+          "title": {
+            "de": "Löschwasserbrunnen"
+          },
+          "description": {
+            "de": "Ein Löschwasserbrunnen ist ein Brunnen aus dem Grundwasser entnommen werden kann. Auch drucklose Anschlüsse in Seen und Flüssen fallen darunter."
           }
         }
       ],
