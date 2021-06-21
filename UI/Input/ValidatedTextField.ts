@@ -31,7 +31,7 @@ export default class ValidatedTextField {
     public static tpList: TextFieldDef[] = [
         ValidatedTextField.tp(
             "string",
-            "Einen Wert eingeben"),
+            "Kommentar eingeben"),
         ValidatedTextField.tp(
             "text",
             "A string, but allows input of longer strings more comfortably (a text area)",
