@@ -97,7 +97,7 @@ export default class UserBadge extends UIElement {
 
         let dryrun: UIElement = new FixedUiElement("");
         if (user.dryRun) {
-            dryrun = new FixedUiElement("TESTING").SetClass("alert");
+            dryrun = new FixedUiElement("TESTMODUS").SetClass("alert");
         }
 
         const settings =

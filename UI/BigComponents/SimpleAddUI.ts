@@ -63,9 +63,9 @@ export default class SimpleAddUI extends UIElement {
         ).onClick(() => {
             State.state.layerControlIsOpened.setData(true);
         })
-        
+
         // IS shown is the state of the dialog - we reset the choice if the dialog dissappears
-        isShown.addCallback(isShown => 
+        isShown.addCallback(isShown =>
         {
             if(!isShown){
                 self._confirmPreset.setData(undefined)
@@ -133,7 +133,7 @@ export default class SimpleAddUI extends UIElement {
         if (State.state.osmConnection?.userDetails?.data?.dryRun) {
             testMode = new Combine([
                 "<span class='alert'>",
-                "Test mode - changes won't be saved",
+                "Testmodus - Änderungen werden nicht gespeichert",
                 "</span>"
             ]);
         }
@@ -178,7 +178,7 @@ export default class SimpleAddUI extends UIElement {
 
         return new Combine([
             Translations.t.general.add.confirmIntro.Subs({title: this._confirmPreset.data.name}),
-            State.state.osmConnection.userDetails.data.dryRun ? "<span class='alert'>TESTING - changes won't be saved</span>" : "",
+            State.state.osmConnection.userDetails.data.dryRun ? "<span class='alert'>TESTMODUS - Änderungen werden nicht gespeichert</span>" : "",
             confirmButton,
             this.cancelButton,
             preset.description,
