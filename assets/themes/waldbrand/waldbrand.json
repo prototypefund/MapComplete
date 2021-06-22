@@ -209,10 +209,23 @@
       "presets": [
         {
           "tags": [
-            "emergency=fire_hydrant"
+            "emergency=fire_hydrant",
+            "fire_hydrant:type=underground"
           ],
           "title": {
-            "de": "Hydrant"
+            "de": "Unterflurhydrant"
+          },
+          "description": {
+            "de": "Ein Hydrant ist ein Anschluss, an dem die Feuerwehr Wasser aus dem Trinkwassernetz entnehmen kann."
+          }
+        },
+        {
+          "tags": [
+            "emergency=fire_hydrant",
+            "fire_hydrant:type=pillar"
+          ],
+          "title": {
+            "de": "Überflurhydrant"
           },
           "description": {
             "de": "Ein Hydrant ist ein Anschluss, an dem die Feuerwehr Wasser aus dem Trinkwassernetz entnehmen kann."
